@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <p id="counter"><strong style="color: aqua;">Count:</strong> 0</p>
+        <button id="increment">Increment</button>
+        <button id="decrement">Decrement</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <script>
+        let count = 0;
+        const counterElement = document.getElementById('counter');
+        const incrementButton = document.getElementById('increment');
+        const decrementButton = document.getElementById('decrement');
+        const resetButton = document.getElementById('reset');
+
+        incrementButton.addEventListener('click', () => {
+            count++;
+            counterElement.textContent = count;
+        });
+
+        decrementButton.addEventListener('click', () => {
+            count--;
+            counterElement.textContent = count;
+        });
+        resetButton.onclick = () => {
+            count = 0;
+            counterElement.textContent = count;
+        }
+    </script>
+</body>
+</html>
