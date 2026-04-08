@@ -9,5 +9,74 @@ body{
     align-items:center;
     justify-content:center;
     height:100vh;
-    
+}
+
+#chl-container{
+    text-align:center;
+    border: 1px solid #ccc;
+    padding: 100px 50px;
+    background-color: darkgrey;
+    border-radius: 10% 10%;
+    max-width: 500px;
+}
+
+#counter{
+    font-size: 4rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px 0;
+}
+
+#increment{
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     border-radius: 20% 20%;
+    border: none;
+     background-color: rgb(53, 241, 53);
+}
+
+
+#decrement{
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     border-radius: 20% 20%;
+    border: none;
+    background-color: rgb(74, 74, 243)
+}
+
+#reset{
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(241, 53, 53);
+    border-radius: 20% 20%;
+    border: none;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(241, 241, 241);
+    font-size: 3rem;
+}
+
+#reset:hover{
+    background-color: hsl(0, 90%, 67%);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+#increment:hover{
+    background-color: hsl(120, 86%, 71%);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+#decrement:hover{
+    background-color: hsl(240, 84%, 71%);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
